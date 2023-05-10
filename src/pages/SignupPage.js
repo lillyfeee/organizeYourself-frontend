@@ -30,7 +30,7 @@ function SignupPage(props) {
 
     authService.signup(requestBody)
       .then((response) => {
-        navigate("/login");
+        navigate("/LoginPage");
       })
       .catch((error) => {
         const errorDescription = error.response.data.message;
@@ -50,7 +50,7 @@ function SignupPage(props) {
         <label>Password:</label>
         <input type="password" name="password" value={password} onChange={handlePassword} />
 
-        <label>Name:</label>
+        <label>Username:</label>
         <input type="text" name="name" value={name} onChange={handleName} />
 
         <button type="submit">Sign Up</button>
@@ -59,7 +59,7 @@ function SignupPage(props) {
       { errorMessage && <p className="error-message">{errorMessage}</p> }
 
       <p>Already have account?</p>
-      <Link to={"/login"}> Login</Link>
+      <Link to={"./LoginPage"}> Login</Link>
     </div>
   )
 }

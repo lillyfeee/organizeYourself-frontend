@@ -1,5 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  width: 450px;
+  max-width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  background-color: rgb(224, 215, 215);
+  margin: 0 auto;
+}
+
+html {
+  font-size: 12pt; /* später 1rem für 12 pt, oder 2rem für 24pt */
 }
 
 .App-logo {
