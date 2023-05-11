@@ -5,11 +5,11 @@
 
 .App {
   text-align: center;
-  width: 450px;
+  width: 1500px;
   max-width: 100%;
   min-height: 100vh;
   height: 100vh;
-  background-color: rgb(224, 215, 215);
+  background-color: rgb(224, 215, 305);
   margin: 0 auto;
 }
 
@@ -50,4 +50,104 @@ html {
   to {
     transform: rotate(360deg);
   }
+}
+
+.sign-up-button {
+  background-color: #E1EEF7;
+  color: black;
+  padding: 5px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 50px
+}
+
+.log-in-button{
+  background-color: #E1EEF7;
+  color: black;
+  padding: 5px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.LoginPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.SignupPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.login-title{
+  font-family: COCOMAT;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.auth-writing{
+  font-size: 20px;
+  font-family: COCOMAT;
+  font-weight: bolder;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.signup-title{
+  font-family: COCOMAT;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.auth-writing-sign-up {
+  font-size: 20px;
+  font-family: COCOMAT;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 170px;
+  margin-right: 170px;
+}
+
+.title {
+  /* font-family: COCOMAT */ 
+  /* margin-top: 0px;*/
+  font-family: Air Travelers Personal Use ;
+  color: white;
+  font-size: 90px;
+}
+
+.cat-gif{
+  size: 30px;
+  margin-top: 30px;
+}
+
+.question{
+  margin-bottom: 10px;
+  font-family: COCOMAT;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.sign-up-log{
+  font-family: COCOMAT;
+  font-weight: bolder;
+  color: black;
 }

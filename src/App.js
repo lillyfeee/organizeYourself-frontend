@@ -1,17 +1,23 @@
 import './App.css';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 /* import Home from './components/pages/Homepage'; */
 import LoginPage from "./pages/LoginPage";
-import SignupPage from "./pages/SignupPage"
-
+import SignupPage from "./pages/SignupPage";
+import HomePage from "./pages/HomePage";
+import ToDoPage from "./pages/ToDoPage";
+import React, { useState } from 'react';
+import Cat from "./assets/cat.png"
+import ToDo from "./pages/ToDoPage"
 
 function App() {
+
   return (
     <div className="App">
-      <h1>Structure your Day!</h1>
       <Routes>
+        <Route exact path="/" element={<HomePage/>}/>
         <Route exact path="/LoginPage" element={<LoginPage />} />
         <Route exact path="/SignupPage" element={<SignupPage />} />
+        {/* <Route exact path="/ToDoPage" element={<ToDoPage/>} /> */}
       </Routes>
     </div>
   );
