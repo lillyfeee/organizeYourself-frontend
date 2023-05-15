@@ -28,6 +28,7 @@ function HomePage(){
             <button onClick={handleLoginButtonClick} className='sign-up-button'>Sign up</button>
           </Link>
         )}
+        
         <div><img className='cat-gif' src={Cat} alt="cat" /></div>
     
         </div>

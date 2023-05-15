@@ -153,5 +153,57 @@ html {
 }
 
 .to-do-daily {
-  background-color: black;
+  background-color: /* #FBF3E6; */ /* #E1EEF7 */white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 300px;
+  margin-right: 900px;
+  width: 400px;
+  height: 600px;
+  font-family: snell roundhand;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.link{
+  background-color: #E1EEF7;
+  color: black;
+  padding: 5px 5px;
+  font-size: 12px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.logo {
+  height: 35px;
+  width: 35px;
+  margin: 20px;
+}
+
+.flower-gif{
+  display: flex;
+  flex-direction: row;
+  margin-top: 190px;
+  margin-left: 900px;
+}
+
+.navgation{
+  background-color: white;
+}
+
+.grateful-things{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: -597px;
+  margin-left: 800px;
+  margin-right: 500px;
+  width: 500px;
+  height: 250px;
+  font-family: snell roundhand;
+  font-size: 20px;
+  border-radius: 10px;
 }

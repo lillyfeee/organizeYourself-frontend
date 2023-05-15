@@ -7,33 +7,16 @@ import LoginPage from "../pages/LoginPage";
 import SignupPage from "../pages/SignupPage";
 import HomePage from "../pages/HomePage";
 import flower from "../assets/output-onlinegiftools.gif"
-import axios from 'axios';
-import CreateToDo from '../components/AddToDo';
-const API_URL = "http://localhost:5005";
 
-function ToDoPage (){
-    const getAllProjects = () => {
+function AllToDoPage (){
 
-       axios
-          .get(
-         `${API_URL}/api/projects`,
-        { headers: { Authorization: `Bearer ${storedToken}` } }
-        )
-    }
+    
 
-   return (
+    return (
         <div>
         {<Navbar/>}
         <section className="to-do-daily">
          <h1>To Do's</h1>
-         <div>
-            {<CreateToDo/>}
-            
-      
-    </div>
-        </section>
-        <section className="grateful-things">
-            <h1>What are you grateful for today?</h1>
         </section>
         <div><img className='flower-gif' src={flower} alt="flowers" /></div>
         </div>
@@ -42,4 +25,4 @@ function ToDoPage (){
     
 }
 
-export default ToDoPage;
+export default AllToDoPage;
