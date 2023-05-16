@@ -1,9 +1,11 @@
 import { useState } from "react";
 import axios from 'axios';
+import plus from "../assets/262038-removebg-preview.png"
+import { useNavigate } from "react-router-dom";
 const API_URL = "http://localhost:5005";
 
-function CreateToDo (){
-
+function CreateToDo (props){
+const navigate = useNavigate()
     const [tasks, setTasks] = useState("");
     const[completed, setCompleted] = useState(false);
 
@@ -15,20 +17,24 @@ function CreateToDo (){
           .post(
             `${API_URL}/task/tasks`,
             requestBody
-          )
+          ).then(response => {
+            props.loadList()
+            navigate("/ToDoPage")
+          })
     }
 
     return (
         <form onSubmit={handleSubmit}>
-        <label>Name:</label>
+        {/* <label></label> */}
         <input
+          className= "ToDoBox"
           type="text"
           name="tasks"
           value={tasks}
           onChange={(e) => setTasks(e.target.value)}
         />
 
-        <button type="submit">Submit</button>
+        <button type="submit"><img className='plus-icon' src={plus} alt="plus" /></button>
       </form>
     )
 
