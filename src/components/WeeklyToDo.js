@@ -4,33 +4,33 @@ import plus from "../assets/262038-removebg-preview.png"
 import { useNavigate } from "react-router-dom";
 const API_URL = "http://localhost:5005";
 
-function Grateful (props){
-  console.log(props)
+function WeeklyToDo (props){
 const navigate = useNavigate()
-    const [name, setName] = useState("");
+    const [tasks, setTasks] = useState("");
+    const[completed, setCompleted] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const requestBody = { name };
+        const requestBody = { tasks, completed };
     
         axios
           .post(
-            `${API_URL}/name`,
+            `${API_URL}/task/tasks`,
             requestBody
           ).then(response => {
-           console.log(response.data)
-           props.loadList()
+            props.loadList()
           })
     }
 
     return (
         <form onSubmit={handleSubmit}>
+        {/* <label></label> */}
         <input
           className= "ToDoBox"
           type="text"
-          name="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          name="tasks"
+          value={tasks}
+          onChange={(e) => setTasks(e.target.value)}
         />
 
         <button type="submit"><img className='plus-icon' src={plus} alt="plus" /></button>
@@ -40,4 +40,4 @@ const navigate = useNavigate()
 
 }
 
-export default Grateful;
+export default WeeklyToDo;

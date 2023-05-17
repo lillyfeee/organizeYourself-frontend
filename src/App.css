@@ -281,3 +281,21 @@ html {
   margin-top: 50px;
   margin-left: 900px;
 }
+
+/* .checkbox{
+  display: flex;
+  flex-direction: column;
+  margin-left: 400px;
+} */
+
+.gratefulBox{
+  
+}
+
+
+.delete-button{
+  display: flex;
+  flex-direction: column;
+  margin-left: 350px;
+  margin-top: -15px;
+}

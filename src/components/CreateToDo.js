@@ -19,13 +19,11 @@ const navigate = useNavigate()
             requestBody
           ).then(response => {
             props.loadList()
-            navigate("/ToDoPage")
           })
     }
 
     return (
         <form onSubmit={handleSubmit}>
-        {/* <label></label> */}
         <input
           className= "ToDoBox"
           type="text"
