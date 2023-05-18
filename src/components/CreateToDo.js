@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from 'axios';
 import plus from "../assets/262038-removebg-preview.png"
 import { useNavigate } from "react-router-dom";
-const API_URL = "http://localhost:5005";
+const API_URL = process.env.REACT_APP_API_URL;
 
 function CreateToDo (props){
 const navigate = useNavigate()
