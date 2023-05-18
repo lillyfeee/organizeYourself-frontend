@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 const API_URL = "http://localhost:5005";
 
 function Grateful (props){
-  console.log(props)
 const navigate = useNavigate()
     const [name, setName] = useState("");
 
@@ -18,7 +17,6 @@ const navigate = useNavigate()
             `${API_URL}/name`,
             requestBody
           ).then(response => {
-           console.log(response.data)
            props.loadList()
           })
     }

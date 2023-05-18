@@ -15,6 +15,8 @@ import Cat from "../assets/cat.png"
 const API_URL = "http://localhost:5005";
 
 function ProfilePage (){
+  
+    const {logOutUser } = useContext(AuthContext);
 
     const {user} = useContext(AuthContext)
 
@@ -24,6 +26,7 @@ function ProfilePage (){
         <section className="profile">
          <h1>Profile</h1>
          <p>Email: {user.email}</p>
+         <Link onClick={logOutUser} to="/"><button className="link2">Log out</button></Link>
          <div><img className='cat-gif' src={Cat} alt="cat" /></div>
     
         </section>

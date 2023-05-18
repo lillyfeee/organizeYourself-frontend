@@ -27,8 +27,7 @@ function Navbar () {
             </div> }
 
             {isLoggedIn && <div className="profile-links">
-              <Link to="/Profile"><img className="logo" src={profile} alt="home"></img></Link>
-              {/* <Link onClick={logOutUser} to="/"><button className="link">Log out</button></Link>  */}
+              <Link to="/Profile"><img className="logo" src={profile} alt="home"></img></Link> 
               <Link to="/ToDoPage"><img className="logo" src={Home} alt="home"></img></Link>
               <Link to="/AllToDoPage"><img className="logo" src={lists} alt="lists"></img></Link>
             </div>}

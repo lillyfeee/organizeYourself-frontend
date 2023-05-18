@@ -15,7 +15,7 @@ const navigate = useNavigate()
     
         axios
           .post(
-            `${API_URL}/task/tasks`,
+            `${API_URL}/weekly`,
             requestBody
           ).then(response => {
             props.loadList()
@@ -24,7 +24,6 @@ const navigate = useNavigate()
 
     return (
         <form onSubmit={handleSubmit}>
-        {/* <label></label> */}
         <input
           className= "ToDoBox"
           type="text"

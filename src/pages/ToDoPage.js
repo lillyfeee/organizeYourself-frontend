@@ -11,6 +11,7 @@ import axios from 'axios';
 import CreateToDo from '../components/CreateToDo';
 import { AuthContext } from '../context/auth.context';
 import Grateful from '../components/Grateful';
+import check from "../assets/checkmark.png"
 
 const API_URL = "http://localhost:5005";
 
@@ -62,7 +63,7 @@ function ToDoPage (){
         <div>
         {<Navbar/>}
         <section className="to-do-daily">
-         <h1>To Do's</h1>
+         <h1 className="titeling">To Do's</h1>
          <div>
             {<CreateToDo loadList={getAllProjects}/>}
          </div>
@@ -71,7 +72,7 @@ function ToDoPage (){
                 return(
                     <div>
                     <p key={project._id}>{project.tasks}</p>
-                    <button className="delete-button" onClick={(event) => {handleClick(project._id, event); event.preventDefault();}}>delete</button>
+                    <button className="delete-button" onClick={(event) => {handleClick(project._id, event); event.preventDefault();}} >finished</button>
                     </div>
                 )
             })} 
@@ -80,7 +81,7 @@ function ToDoPage (){
          </div>
         </section>
         <section className="grateful-things">
-            <h1>What are you grateful for today?</h1>
+            <h1 className="titeling2">What are you grateful for today?</h1>
            <div>
              {<Grateful loadList={getAllGrateful} />}
            </div>
@@ -89,7 +90,7 @@ function ToDoPage (){
                 return(
                     <div>
                     <p key={project._id}>{project.name}</p>
-                    <button onClick={(event) => {handleDelete(project._id, event); event.preventDefault();}}>delete</button>
+                    <button className="delete-button2" onClick={(event) => {handleDelete(project._id, event); event.preventDefault();}}>delete</button>
                     </div>
                 )
             })} 

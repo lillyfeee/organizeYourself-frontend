@@ -161,8 +161,8 @@ html {
   margin-right: 900px;
   width: 400px;
   height: 600px;
-  font-family: snell roundhand;
-  font-size: 25px;
+  font-family: Avenir next;
+  font-size: 20px;
   border-radius: 10px;
 }
 
@@ -175,6 +175,17 @@ html {
   border-radius: 50px;
   cursor: pointer;
   margin: 30px;
+}
+
+.link2{
+  background-color: #E1EEF7;
+  color: black;
+  padding: 5px 5px;
+  font-size: 12px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 10px;
 }
 
 .logo {
@@ -203,7 +214,7 @@ html {
   margin-right: 500px;
   width: 500px;
   height: 250px;
-  font-family: snell roundhand;
+  font-family: Avenir next;
   font-size: 20px;
   border-radius: 10px;
 }
@@ -242,8 +253,8 @@ html {
   margin-right: 900px;
   width: 400px;
   height: 600px;
-  font-family: snell roundhand;
-  font-size: 25px;
+  font-family: Avenir next;
+  font-size: 20px;
   border-radius: 10px;
 }
 
@@ -256,21 +267,21 @@ html {
   margin-right: 900px;
   width: 400px;
   height: 600px;
-  font-family: snell roundhand;
-  font-size: 25px;
+  font-family: Avenir next;
+  font-size: 20px;
   border-radius: 10px;
 }
 
-.goals{
+.grateful-things2{
   background-color: white;
   display: flex;
   flex-direction: column;
-  margin-top: -597px;
+  margin-top: -600px;
   margin-left: 1100px;
   margin-right: 500px;
-  width: 300px;
+  width: 350px;
   height: 400px;
-  font-family: snell roundhand;
+  font-family: Avenir next;
   font-size: 20px;
   border-radius: 10px;
 }
@@ -278,7 +289,7 @@ html {
 .flower-gif-2{
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-left: 900px;
 }
 
@@ -292,10 +303,38 @@ html {
   
 }
 
+.titeling{
+  font-family: snell roundhand;
+  font-size: 40px ;
+}
 
 .delete-button{
   display: flex;
   flex-direction: column;
-  margin-left: 350px;
+  margin-left: 340px;
+  margin-top: -10px;
+  
+}
+
+.delete-button2{
+  display: flex;
+  flex-direction: column;
+  margin-left: 390px;
   margin-top: -15px;
+}
+
+.delete-button3{
+  display: flex;
+  flex-direction: column;
+  margin-left: 295px;
+  margin-top: -15px;
+}
+
+.todos{
+  display: flex;
+}
+
+.titeling2{
+  font-family: snell roundhand;
+  font-size: 30px ;
 }
